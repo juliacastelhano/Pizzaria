@@ -8,7 +8,8 @@ public class Principal {
 			System.out.println("1 - Cliente");
 			System.out.println("2 - Atendente");
 			System.out.println("3 - Pedido");
-			System.out.println("4 - Finalizar");
+			System.out.println("4 - Pizza");
+			System.out.println("5 - Finalizar");
 			opc = Console.readInt("Opção: ");
 			switch(opc){
 				case 1:
@@ -18,9 +19,13 @@ public class Principal {
 					new AppAtendente();
 					break;
 				case 3:
+					new AppPedido();
+					break;
+				case 4:
+					new AppPizza();
 					break;
 			}
-		}while(opc != 4);
+		}while(opc != 5);
 	}
         
     }

@@ -66,6 +66,9 @@ public class AtendentePersistencia {
 		}
 		return null;
 	}
+	
+
+	
 	public static List<Atendente> getAtendentes(Atendente atendente){
 		EntityManager manager = EntityManagerFactory.getInstance();
 		Query consulta = manager.createQuery("from Atendente where nome like :param");
